@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Formulario de registro</h1>
+  <form action="registro.php" method="GET">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" maxlength="50" required>
+    </div>
+    <div class="form-group">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" maxlength="50" required>
+    </div>
+    <div class="form-group">
+      <label>Género:</label><br>
+      <input type="radio" id="masculino" name="genero" value="masculino" required>
+      <label for="masculino">Masculino</label><br>
+      <input type="radio" id="femenino" name="genero" value="femenino" required>
+      <label for="femenino">Femenino</label><br>
+      <input type="radio" id="no-binario" name="genero" value="no binario" required>
+      <label for="no-binario">No binario</label><br>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="novedades" name="novedades" checked>
+      <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="condiciones" name="condiciones" required>
+      <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</body>
+</html>
